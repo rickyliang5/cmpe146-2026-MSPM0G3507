@@ -1,14 +1,14 @@
 #include <cstdio>
 
 #include "../hal/gpio.hpp"
-
+#include "lab1.hpp"
 int main()
 {
   std::printf("Hello, World\n");
-
   // TODO(lab1, step 2): Configure the RGB LED pins as outputs and the two
   // push-buttons (S1, S2) as inputs using the gpio:: driver you write in
   // gpio.cpp. See README.md for pin assignments and reference material.
+  lab1::input_pin pin;
 
   // TIP: the switches need pull resistor. See the user schematic of the launch
   // pad for which is needed for S1 and S2.
